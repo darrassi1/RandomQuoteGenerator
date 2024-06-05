@@ -1,0 +1,83 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 90%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#quote-container {
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+#quote {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #333;
+  white-space: pre-wrap;
+}
+
+/* Animation pour chaque mot */
+#quote span.highlight {
+  animation: highlightWord 0.5s ease infinite; /* Animation pour la surbrillance */
+}
+
+@keyframes highlightWord {
+  0% {
+    background-color: transparent; /* Début de l'animation : pas de surbrillance */
+  }
+  100% {
+    background-color: yellow; /* Fin de l'animation : surbrillance jaune */
+  }
+}
+
+#author {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #666;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+footer {
+  background-color: #333; /* Couleur de fond du pied de page */
+  color: #fff; /* Couleur du texte */
+  text-align: center; /* Centrer le texte */
+  padding: 20px; /* Ajouter un espacement intérieur */
+  position: fixed; /* Fixer le pied de page en bas de la fenêtre */
+  left: 0; /* Aligner à gauche */
+  bottom: 0; /* Aligner en bas */
+  width: 100%; /* Largeur de 100% */
+}
