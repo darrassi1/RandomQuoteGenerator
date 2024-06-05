@@ -11,7 +11,7 @@ A simple and elegant web application that generates random quotes and allows use
 
 ## Demo
 
-You can see a live demo of the project [here](#).
+You can see a live demo of the project [here](https://darrassi1.github.io/RandomQuoteGenerator/).
 
 ## Installation
 
